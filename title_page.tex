@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage[a4paper]{geometry} 
+\usepackage{graphicx}
+\usepackage{fontspec}
+\usepackage{setspace}
+\newfontfamily\arial{Arial}
+\newenvironment{tumtitlepage}{\arial \thispagestyle{empty}\newgeometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=1cm}} {\newpage\restoregeometry}
+
+\begin{document}
+\singlespacing
+
+\begin{tumtitlepage}
+    \begin{minipage}[t]{0.6\textwidth}
+        \vspace{-18pt}
+        \hspace{-16pt}\noindent\fontsize{11pt}{13pt}\selectfont
+        Technische Universität München
+        
+        \hspace{-18pt}\noindent<TUM School/Fakultät/ TUM Campus Straubing>
+    \end{minipage}
+    \begin{minipage}[t]{0.3\textwidth}
+        \raggedleft
+        \includegraphics[height=1.2cm]{images/tum.pdf} % Replace with your actual file name
+        \hspace{-30pt}
+    \end{minipage}
+
+    \vspace{88pt} 
+
+    \begin{center}
+        \fontsize{16pt}{18pt}\selectfont
+        <Titel der Dissertation>
+    \end{center}
+
+
+    \vspace{25pt}
+
+    \begin{center}
+        \fontsize{11pt}{13pt}\selectfont
+        Vorname(n) Name
+    \end{center}
+
+    \vspace{45pt}
+
+    \noindent\fontsize{11pt}{25pt}\selectfont
+     Vollständiger Abdruck der von der/des <TUM School of/Fakultät für/ TUM Campus Straubing> der Technischen Universität München zur Erlangung eines/r
+     \begin{center}
+     \vspace{-7pt}
+     Doktors/Doktorin der ………  (Dr. ….)
+     \vspace{-8pt}
+     \end{center}
+     genehmigten Dissertation.
+
+     \vspace{66pt}
+
+     \noindent \fontsize{11pt}{11pt}\selectfont Vorsitz:\hspace{64pt}………………………………………………
+
+    \vspace{33pt}
+    
+    \noindent \fontsize{11pt}{11pt}\selectfont Prüfer*innen der Dissertation:
+   
+    \vspace{22pt}
+    
+    \hspace{54pt}\fontsize{11pt}{20pt}\selectfont1. \hspace{13pt} ………………………………………………
+    
+    \hspace{54pt}2. \hspace{13pt} ………………………………………………
+    
+    \hspace{54pt}3. \hspace{13pt} ………………………………………………
+
+    \vspace{22pt}
+    
+    \noindent\fontsize{11pt}{25pt}\selectfont Die Dissertation wurde am ................... bei der Technischen Universität München eingereicht und durch die/den <TUM School/Fakultät/ TUM Campus Straubing>*  am  ......................... angenommen
+    
+\end{tumtitlepage}
+
+\end{document}
