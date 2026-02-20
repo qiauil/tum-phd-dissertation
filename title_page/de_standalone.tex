@@ -2,9 +2,8 @@
 \usepackage[a4paper]{geometry} 
 \usepackage{graphicx}
 \usepackage{fontspec}
-\usepackage{setspace}
 \newfontfamily\arial{Arial}[Scale=1.0]
-\newenvironment{tumtitlepage}{\arial \thispagestyle{empty} \newgeometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=1cm}\singlespacing}{\newpage\restoregeometry}
+\newenvironment{tumtitlepage}{\arial \linespread{1.0} \thispagestyle{empty} \newgeometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=1cm}}{\newpage\restoregeometry}
 
 \begin{document}
 
