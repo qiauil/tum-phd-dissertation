@@ -2,7 +2,10 @@
 This is an **unofficial** LaTeX template for TUM PhD dissertation.
 Considering that TUM graduation school only has a template for the title page, this template is basically a combination of a latex version of the official [docx title page template](https://collab.dvb.bayern/download/attachments/69917104/20240419_Titelblatt.docx) provided by TUM graduation school and a very nice [PhD dissertation template for University of Malta by Prof. Jean-Paul Ebejer](https://github.com/jp-um/university_of_malta_LaTeX_dissertation_template)
 
+![](./images/preview.png)
+
 # Usage
+
 **ONLY** lulaTeX is supported for compilation due to the font requirements of the official TUM template.
 ## Whole Template
 If you compile the template locally, you could simply use `latexmk -lualatex` in the directory of `dissertation_main` to compile the whole template. If you are using a LaTeX editor or online editor, make sure to set the compiler to LuaLaTeX. You may also need to set the default bibliography tool to `Biber` in your editor settings (Check the [README file of the original template](https://github.com/jp-um/university_of_malta_LaTeX_dissertation_template/blob/main/README.md)).
