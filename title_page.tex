@@ -3,11 +3,11 @@
 \usepackage{graphicx}
 \usepackage{fontspec}
 \usepackage{setspace}
-\newfontfamily\arial{Arial}
-\newenvironment{tumtitlepage}{\arial \thispagestyle{empty}\newgeometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=1cm}} {\newpage\restoregeometry}
+\newfontfamily\arial{Arial}[Scale=1.0]
+\newenvironment{tumtitlepage}{\arial \thispagestyle{empty} \newgeometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=1cm}\singlespacing}{\newpage\restoregeometry}
 
 \begin{document}
-\singlespacing
+
 
 \begin{tumtitlepage}
     \begin{minipage}[t]{0.6\textwidth}
@@ -23,31 +23,29 @@
         \hspace{-30pt}
     \end{minipage}
 
-    \vspace{88pt} 
+    \vspace{97pt} 
 
-    \begin{center}
-        \fontsize{16pt}{18pt}\selectfont
-        <Titel der Dissertation>
-    \end{center}
+    
+    {\centering\fontsize{16pt}{18pt}\selectfont<Titel der Dissertation>\par}
 
 
-    \vspace{25pt}
+    \vspace{46pt}
 
-    \begin{center}
+    {\centering
         \fontsize{11pt}{13pt}\selectfont
         Vorname(n) Name
-    \end{center}
+    \par}
 
-    \vspace{45pt}
+    \vspace{55pt}
 
     \noindent\fontsize{11pt}{25pt}\selectfont
      Vollständiger Abdruck der von der/des <TUM School of/Fakultät für/ TUM Campus Straubing> der Technischen Universität München zur Erlangung eines/r
-     \begin{center}
-     \vspace{-7pt}
-     Doktors/Doktorin der ………  (Dr. ….)
-     \vspace{-8pt}
-     \end{center}
-     genehmigten Dissertation.
+     
+     {\centering
+    Doktors/Doktorin der ………  (Dr. ….)
+     \par}
+
+     \noindent\fontsize{11pt}{25pt}\selectfont genehmigten Dissertation.
 
      \vspace{66pt}
 
