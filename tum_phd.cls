@@ -222,10 +222,12 @@
 \addto{\captionsenglish}{\renewcommand{\abstractname}{\Large\bfseries\sffamily\textcolor{DissertationColor}{Abstract}}}
 
 
-\newenvironment{acknowledgements}
-{\renewcommand{\abstractname}{\Large\bfseries\sffamily\textcolor{DissertationColor}{Acknowledgements}}\abstract}
+\newenvironment{frontmatertitle}[1][\unskip]
+{\renewcommand{\abstractname}{\Large\bfseries\sffamily\textcolor{DissertationColor}{#1}}\abstract}
 {\endabstract\if@openright\cleardoublepage\else\clearpage\fi}
-       
+
+\newenvironment{acknowledgements}{\frontmatertitle[Acknowledgements]}{\endfrontmatertitle}
+
 \addto{\captionsenglish}{\renewcommand{\abstractname}{\Large\bfseries\sffamily\textcolor{DissertationColor}{Abstract}}}
 
 
