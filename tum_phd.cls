@@ -223,10 +223,8 @@
 
 
 \newenvironment{frontmatertitle}[1][\unskip]
-{\renewcommand{\abstractname}{\Large\bfseries\sffamily\textcolor{DissertationColor}{#1}}\abstract}
+{\renewcommand{\abstractname}{\Large\bfseries\sffamily\textcolor{DissertationColor}{#1}}\addcontentsline{toc}{chapter}{#1}\abstract}
 {\endabstract\if@openright\cleardoublepage\else\clearpage\fi}
-
-\newenvironment{acknowledgements}{\frontmatertitle[Acknowledgements]}{\endfrontmatertitle}
 
 \addto{\captionsenglish}{\renewcommand{\abstractname}{\Large\bfseries\sffamily\textcolor{DissertationColor}{Abstract}}}
 
