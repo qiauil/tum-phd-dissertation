@@ -48,6 +48,7 @@
 \RequirePackage{xcolor}
 \RequirePackage{eso-pic}
 
+\RequirePackage{pdfpages}  % for including the published versions of the papers in the appendix
 
 \RequirePackage{hyperref}
 \hypersetup{
